@@ -1,0 +1,68 @@
+= Java new features
+
+== Setup
+
+=== MACOS
+
+==== Java 17 Installation
+[source=shell]
+
+----
+$ brew install openjdk@17
+----
+
+export PATH
+
+[source=shell]
+----
+$ echo 'export PATH="/usr/local/opt/openjdk@17/bin:$PATH"' >> ~/.zshrc
+----
+
+Check installation
+
+[source=shell]
+----
+$ java --version
+openjdk 17.0.11 2024-04-16
+----
+
+Link the JDK into the MacOS JVM Dir
+
+[source=shell]
+----
+$ sudo ln -sfn /usr/local/opt/openjdk@17/libexec/openjdk.jdk \
+/Library/Java/JavaVirtualMachines/openjdk-17.jdk
+----
+
+==== Gradle Installation
+Gradle Installation
+[source,shell]
+----
+$ brew install gradle
+----
+
+Check Installation
+
+[source,shell]
+----
+$ gradle -v
+----
+
+Output
+
+[source,shell]
+----
+------------------------------------------------------------
+Gradle 8.7
+------------------------------------------------------------
+
+Build time:   2024-03-22 15:52:46 UTC
+Revision:     650af14d7653aa949fce5e886e685efc9cf97c10
+----
+
+Create project
+
+[source,shell]
+----
+$ gradle init --type java-application  --dsl groovy
+----
