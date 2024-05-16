@@ -14,5 +14,5 @@ plugins {
 rootProject.name = 'java-new-features'
 include('app_1.8')
 include('app_9')
-
+include('app_10')
 
