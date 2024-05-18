@@ -10,7 +10,7 @@ build
 !.gitignore
 !.gitkeep
 
-# Allow Gradle config files
+# Allow Gradle files
 !gradle.properties
 !build.gradle
 !settings.gradle
@@ -18,6 +18,10 @@ build
 # Allow java project files
 !*.java
 !*.sh
+
+# Allow Github Actions project files
+!*.yaml
+!*.yml
 
 # Allow Readme, Makefile, Dockerfile
 !README.adoc
