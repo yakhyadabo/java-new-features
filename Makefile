@@ -1,5 +1,8 @@
 
 
+wrapper:
+	gradle wrapper
+
 build:
 	./gradlew build
 

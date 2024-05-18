@@ -16,8 +16,8 @@ jobs:
           distribution: 'temurin'
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
-      - name: Grant Permissions to gradlew
-        run: chmod +x gradlew
+      - name: Gradle wrapper
+        run: make wrapper
       - name: Build project
         run: make build
       - name: Test project
