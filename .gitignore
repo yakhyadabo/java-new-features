@@ -14,6 +14,7 @@ build
 !gradle.properties
 !build.gradle
 !settings.gradle
+!gradlew
 
 # Allow java project files
 !*.java
